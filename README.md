@@ -1,8 +1,8 @@
 # Farmacia
 Este proyecto es una aplicación web desarrollada con Django para gestionar una farmacia. Permite la gestión de clientes, medicamentos, pedidos, ventas e inventarios.
 
-Características
-Gestión de clientes
+# Características
+* Gestión de clientes
 Gestión de medicamentos
 Gestión de pedidos
 Gestión de ventas
