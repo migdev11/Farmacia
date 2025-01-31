@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .menu {
+            margin-bottom: 20px;
+        }
+        .menu a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BIENVENIDOS A NUESTRA FARMACIA</h1>
+        <div class="menu">
+            <a href="{% url 'lista_clientes' %}">Clientes</a>
+            <a href="{% url 'lista_sucursales' %}">Sucursales</a>
+            <a href="{% url 'lista_usuarios' %}">Usuarios</a>
+            <a href="{% url 'lista_medicamentos' %}">Medicamentos</a>
+            <a href="{% url 'lista_inventario' %}">Inventario</a>
+            <a href="{% url 'lista_pedidos' %}">Pedidos</a>
+            <a href="{% url 'lista_ventas' %}">Ventas</a>
+            <a href="{% url 'lista_transferencias' %}">Transferencias</a>
+        </div>
+        <img src="{% static 'https://th.bing.com/th/id/OIP.xx1yssYRZhtBXLoWBjN15wAAAA?w=239&h=60&c=7&r=0&o=5&pid=1.7' %}" alt="Imagen de inicio" style="width:100%; max-width:600px;">
+    </div>
+</body>
+</html>
